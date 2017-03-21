@@ -1,0 +1,44 @@
+extends ./layout.pug
+
+block content
+  span(style="display:block;margin-bottom:10px;") #{user}
+
+  span Your Buy Order has been completed. Please check your bitcoin wallet to check your balance
+
+  h1 Order Summary
+
+  table
+    tr
+      td Tracking
+      td #{tracking}
+    tr
+      td Status
+      td #{status}
+    tr
+      td Date Created
+      td #{createdAt}
+    tr
+      td Last Updated
+      td #{updatedAt}
+    tr
+      td Amount
+      td #{amount}
+    tr
+      td BTC Address
+      td #{address}
+    tr
+      td Payment Method
+      td #{paymentMethod}
+    tr
+      td Payment type
+      td #{paymentType}
+
+  h1 Your Cash Deposits
+
+  table
+    tr
+      td Date
+      td #{transactionDate}
+    tr
+      td Transaction Code
+      td #{transactionCode}

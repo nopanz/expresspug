@@ -1,0 +1,49 @@
+extends ./layout.pug
+
+block header
+  header(style="overflow:auto;display:table;width:100%;padding:10px")
+    img(height="40", style="float:left", src="https://ci4.googleusercontent.com/proxy/Uc5RoGJo6Qr7SAy6cvxmDpjvXr37XG_95WlQONc8x4Ah9WaUGsEkMwO0tG1OIMkx4TEeo4bY38SX5CxKRQBfpmjCJ3EVRff91WjeDUZ8zaMOfp2v9vZI4ULOxSg0E2T4aC0RD6QiJHYtCkmBm77gMF36H6neVUjQ0bLqTHo=s0-d-e1-ft#https://gallery.mailchimp.com/01a7712e69ce2b2dd2326d5fe/images/d2313a05-2bae-46cb-b97f-9b60c08a60ca.png")
+    .title-container(style="display:table-cell;vertical-align:middle")
+
+block content
+  span(style="display:block;margin-bottom:10px;") #{user}
+
+  span Your Buy Order has been completed. Please check your bitcoin wallet to check your balance
+
+  h1 Order Summary
+
+  table
+    tr
+      td Tracking
+      td #{tracking}
+    tr
+      td Status
+      td #{status}
+    tr
+      td Date Created
+      td #{createdAt}
+    tr
+      td Last Updated
+      td #{updatedAt}
+    tr
+      td Amount
+      td #{amount}
+    tr
+      td BTC Address
+      td #{address}
+    tr
+      td Payment Method
+      td #{paymentMethod}
+    tr
+      td Payment type
+      td #{paymentType}
+
+  h1 Your Cash Deposits
+
+  table
+    tr
+      td Date
+      td #{transactionDate}
+    tr
+      td Transaction Code
+      td #{transactionCode}

@@ -1,0 +1,74 @@
+$badass: #f9f9fb;
+$grey: #eaeaec;
+$footer-font-color: #929397;
+$font-family-sans-serif: "proxima-nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
+body {
+  margin: 0;
+  background-color: $badass;
+  font-family: $font-family-sans-serif;
+}
+.container {
+  width: 70%;
+  height: 100%;
+  margin: auto;
+  margin-top: 10%;
+  .verification-form {
+    background-color: white;
+    border: 1px solid $grey;
+    min-width: 389px;
+    max-width: 518px;
+    border-radius: 4px;
+    margin: auto;
+    .header {
+      border-bottom: 1px solid $grey;
+      height: 70px;
+      img {
+        height: 75px;
+      }
+      h4 {
+        float: right;
+        font-weight: 300;
+      }
+    }
+    .content {
+      padding: 20px 40px;
+      h4 {
+        font-weight: 300;
+      }
+      .verify-link-button {
+        font-size: 16px;
+        color: #fff;
+        border: none;
+        background-color: #ef6443;
+        padding: 15px;
+        border-radius: 6px;
+        margin: 20px 0px;
+        display: inline-block;
+        text-decoration: none;
+      }
+    }
+  }
+  .footer-verify {
+    text-align: center;
+    min-width: 389px;
+    max-width: 518px;
+    margin-top: 40px;
+    margin: auto;
+    p {
+      color:$footer-font-color;
+      font-weight: 200;
+    }
+  }
+}
+
+.block {
+  padding: 5px 20px;
+}
+
+.buybitcoin-logo {
+  background-image: url('/images/buybitcoin-full-white-logo.svg');
+  background-size: cover;
+}
+.buybitcoin-logo-svg {
+  fill: #e6653d;
+}
